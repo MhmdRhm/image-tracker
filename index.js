@@ -5,6 +5,7 @@ const { getImage, getLogs } = require("./controllers/images");
 
 
 const app = express();
+app.set('trust proxy', true);
 
 app.use(morgan('dev'));
 app.use(express.json());
